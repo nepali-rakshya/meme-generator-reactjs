@@ -3,11 +3,16 @@ import cn from "classnames";
 
 const Meme = () => {
   return (
-    <section>
+    <section className={MemeCSS.memeGenerator}>
       <form action="">
         <div className={MemeCSS.meme__input}>
-          <input type="text" name="setup" id="setup" />
-          <input type="text" name="punchline" id="punchline" />
+          <input type="text" placeholder="Top text" name="setup" id="setup" />
+          <input
+            type="text"
+            placeholder="Bottom text"
+            name="punchline"
+            id="punchline"
+          />
         </div>
 
         <button className={MemeCSS.meme__button}>

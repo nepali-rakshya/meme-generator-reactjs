@@ -26,6 +26,7 @@ button {
     rgba(120, 46, 144, 1) 41%,
     rgba(155, 74, 185, 1) 92%
   );
+  border: none;
 }
 
 .meme__container {
@@ -33,4 +34,18 @@ button {
   align-items: center;
   margin: 0 auto;
   gap: 2px;
+}
+
+@media (min-width: 800px) {
+  .memeGenerator {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  input[type="text"],
+  button {
+    padding: 1em;
+    font-size: 0.9rem;
+  }
 }
