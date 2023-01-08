@@ -1,4 +1,24 @@
-.nav__logo {
+.navbar {
   display: flex;
   justify-content: space-between;
+  color: #ffffff;
+  align-items: center;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 8px;
+  font-size: 1.5rem;
+  letter-spacing: -2.34px;
+}
+
+.nav__logo--width {
+  width: 35px;
+}
+
+.nav__title--light {
+  font-weight: 400;
+  font-size: 0.9rem;
 }

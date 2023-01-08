@@ -4,15 +4,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
 
 .navbar {
-  background: rgb(41, 11, 51);
+  background: rgb(103, 34, 128);
   background: linear-gradient(
     90deg,
-    rgba(41, 11, 51, 1) 0%,
-    rgba(93, 27, 117, 1) 37%,
-    rgba(144, 79, 167, 1) 81%
+    rgba(103, 34, 128, 1) 0%,
+    rgba(120, 46, 144, 1) 41%,
+    rgba(155, 74, 185, 1) 92%
   );
-  padding: 3em;
+  padding: 1.5em 2.5em 1.5em 1.3em;
+}
+
+.meme__form {
+  padding: 2.5em 2.5em 1.5em 2.2em;
 }
