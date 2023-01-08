@@ -1,20 +1,18 @@
 import MemeCSS from "./Meme.module.css";
-import cn from "classnames";
 
-const Meme = () => {
+const Meme = (props) => {
+  function handleClick() {
+    return <h1>I am don</h1>;
+  }
+
   return (
     <section className={MemeCSS.memeGenerator}>
       <div className={MemeCSS.meme__input}>
-        <input type="text" placeholder="Top text" name="setup" id="setup" />
-        <input
-          type="text"
-          placeholder="Bottom text"
-          name="punchline"
-          id="punchline"
-        />
+        <input type="text" placeholder="Top text" />
+        <input type="text" placeholder="Bottom text" />
       </div>
 
-      <button className={MemeCSS.meme__button}>
+      <button className={MemeCSS.meme__button} onClick={handleClick}>
         <div className={MemeCSS.meme__container}>
           <div>Get a new meme image</div>
           <img
@@ -24,6 +22,9 @@ const Meme = () => {
           />
         </div>
       </button>
+      <div className="img__generated">
+        <p className="para">Henlo</p>
+      </div>
     </section>
   );
 };
