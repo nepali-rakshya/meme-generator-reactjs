@@ -1,9 +1,9 @@
 import MemeCSS from "./Meme.module.css";
 
 const Meme = (props) => {
-  function handleClick() {
-    return <h1>I am don</h1>;
-  }
+  const handleClick = () => {
+    console.log(`The url is ${props.link}`);
+  };
 
   return (
     <section className={MemeCSS.memeGenerator}>
@@ -22,9 +22,6 @@ const Meme = (props) => {
           />
         </div>
       </button>
-      <div className="img__generated">
-        <p className="para">Henlo</p>
-      </div>
     </section>
   );
 };
