@@ -2,8 +2,10 @@ import MemeCSS from "./Meme.module.css";
 import memeData from "./data";
 
 const Meme = () => {
+  let memeLength = memeData[0].data.memes.length;
   const handleClick = () => {
-    let randomArray = memeData[Math.floor(Math.random() * memeData.length)];
+    let randomArray =
+      memeData[0].data.memes[Math.floor(Math.random() * memeLength)];
     console.log(randomArray.url);
   };
 
