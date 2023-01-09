@@ -1,8 +1,10 @@
 import MemeCSS from "./Meme.module.css";
+import memeData from "./data";
 
-const Meme = (props) => {
+const Meme = () => {
   const handleClick = () => {
-    console.log(`The url is ${props.link}`);
+    let randomArray = memeData[Math.floor(Math.random() * memeData.length)];
+    console.log(randomArray.url);
   };
 
   return (
