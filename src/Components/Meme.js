@@ -1,12 +1,15 @@
 import MemeCSS from "./Meme.module.css";
 import memeData from "./data";
+import { useState } from "react";
 
 const Meme = () => {
+  const [memeImage, setMemeImage] = useState("");
+
   let memeLength = memeData[0].data.memes.length;
   const handleClick = () => {
     let randomArray =
       memeData[0].data.memes[Math.floor(Math.random() * memeLength)];
-    console.log(randomArray.url);
+    setMemeImage(randomArray.url);
   };
 
   return (
@@ -26,6 +29,13 @@ const Meme = () => {
           />
         </div>
       </button>
+      <div className={MemeCSS.meme__image}>
+        <img
+          src={memeImage}
+          alt="meme-image"
+          className={MemeCSS["meme__image--width"]}
+        />
+      </div>
     </section>
   );
 };

@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
 
       <div className={NavbarCSS["nav__title--light"]}>
-        React Course - Project 3
+        Rakshya Nepali - Project
       </div>
     </nav>
   );
