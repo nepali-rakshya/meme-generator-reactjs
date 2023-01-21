@@ -15,10 +15,10 @@ const Meme = () => {
   const handleClick = () => {
     let randomArray =
       allMemeImages[0].data.memes[Math.floor(Math.random() * memeLength)];
-    setMemeImage({
-      ...memeImage,
+    setMemeImage((prevMeme) => ({
+      ...prevMeme,
       randomImage: randomArray.url,
-    });
+    }));
   };
 
   return (
